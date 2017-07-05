@@ -1,2 +1,2 @@
-THIS IS A SAMPLE FILE!! marrrrrrr jaaaaaa
+marrrrrrr jaaaaaa
 hellooo
