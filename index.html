@@ -1,9 +1,140 @@
 <html>
-	<body bgcolor=black>
-		<font color=white size=12 family="Helvetica" align=center>
-		Hello Baby!! That's the change in the file
-		blah blah 
-		and some more blah blah
-		</font>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Quicker</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+	<link rel="import" href="header.html">
+	</head>
+	
+	<body >
+	      <div class="navbar-header" style="width:100%;">
+						<big><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></big>
+								<img src="https://www.aurigait.com/wp-content/gallery/homepageclients/dynamic/New-logo-1-nggid03374-ngg0dyn-400x300x100-00f0w010c011r110f110r010t010.png" style="height:100px;width:100px;margin-left:50px;">
+								
+							<img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5524878.jpg"  alt="Car logo"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;margin-left:100px;"></td>
+							<img src="https://image.freepik.com/icones-gratis/motocicleta-de-grande-porte-silhueta-negra_318-43485.jpg"  alt="Bike logo"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
+							<img src="https://cdn.vectorstock.com/i/thumb-large/23/56/2382356.jpg/2382356.jpg"  alt="Mobile n Tabs"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
+							<img src="https://image.freepik.com/free-icon/books-stack-for-education_318-59577.jpg"  alt="Books"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
+							<img src="http://images.clipartpanda.com/household-clipart-sofa_lamp.jpg" alt="Furniture"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
+							<img src="https://image.freepik.com/free-vector/vacuum-cleaner-device-with-wheels_72147495386.jpg" alt="Home Appliances"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
+							<img src="https://image.freepik.com/free-icon/female-hand-bag-with-metal-handle-tips_318-43144.jpg" alt="Accessories"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
+							<img src="https://http2.mlstatic.com/adesivo-vinil-decor-beija-flor-so-r-400-frete-cores-D_NQ_NP_18923-MLB20163175450_092014-O.jpg" alt="Other"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
+							
+							<a href="#" data-toggle="modal" data-target="#login"  >
+									<span class="glyphicon glyphicon-user" ></span> Login 
+								</a>
+							<a href="#" data-toggle="modal" data-target="#register"  >
+								<span class="glyphicon glyphicon-user" ></span> Register 
+							</a>
+						
+                    </div>
+		
+
+			<!-- Login modal-->
+		<div class="modal fade" id="login" role="dialog" style="background-image:url('http://www.whizjuniors.com/Content/img/banner.jpg');">
+			<div class="modal-dialog">
+			 <div class="modal-content">  
+				<div class="modal-header" style="background-color:black;color:white;">
+					 <h1>Login
+					 <button type="button" class="close" data-dismiss="modal"><big><span class="glyphicon glyphicon-remove-sign" style="color:white;"></big></span></button>
+					 </h1>
+				</div>
+				 <div class="modal-body">
+				 
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<input type="text" class="form-control" style="width:200px;" id="username" placeholder="Enter username">
+								<br>
+							<input type="password" class="form-control" style="width:200px;" id="pwd" placeholder="Enter password"><br>					
+						<button type="submit" class="btn btn-success btn-lg">Login</button><a href="#">Forgot Password?</a><br>
+						</div>
+					</div>
+					<div class="col-sm-6 modal-heaader" style="border-left:thin solid black;">
+						<h4><b>Sign in with :</b></h4>
+						<button type="button" class="form-control btn-social btn-facebook" style="width:180px;height:30px;"> Facebook</button>
+						<br>
+						<button type="button" class="form-control btn-social btn-google"  style="width:180px;height:30px;"> Google +</button>
+						<br>
+						<button type="button" class="form-control btn-social btn-yahoo"  style="width:180px;height:30px;"> Yahoooo!</button>
+											</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	       <!-- end of login moaal-->			
+		   
+		   
+		   <!-- Registration modal-->
+		<div class="modal fade" id="register" role="dialog" style="background-image:url('http://www.whizjuniors.com/Content/img/banner.jpg');">
+			<div class="modal-dialog">
+			<div class="modal-content">	
+				<div class="modal-header" style="background-color:black;color:white;">
+					 <h1>Register
+					 <button type="button" class="close" data-dismiss="modal"><big><span class="glyphicon glyphicon-remove-sign" style="color:white;"></big></span></button>
+					 </h1>
+				</div>
+				
+			<div class="modal-body">	
+				<div>
+					<form align=center>
+					<div class="form-group">
+						<input type="text" class="form-control" id="username" placeholder="Enter first name">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="username" placeholder="Enter last name">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="username" placeholder="Enter preferred username">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" id="username" placeholder="Enter password">
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" id="username" placeholder="Enter email">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="username" placeholder="Enter contact number">
+					</div>
+					
+					<div class="form-group">
+						<center><button type="submit" class="btn btn-success btn-lg" >Regsiter</button></center>
+					</div>
+				</form>
+				</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	       <!-- end of registration modal-->  
+
+		<div id="mySidenav" class=" sidenav" > <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		
+						 
+						  <a href="#">Categories</a>
+						  <a href="#">Special Offers</a>
+						  <a href="#">Deals of the day</a>
+						  <a href="#">About Us</a>
+						  <a href="#">Contact</a>
+						  
+		</div>
+		
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+
+		   
 	</body>
 </html>

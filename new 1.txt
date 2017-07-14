@@ -1,0 +1,29 @@
+<table style="float:right;" >
+						<tr>
+							<td>
+								<big><a style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</a></big>
+							</td>
+							<td>	
+								<img src="https://www.aurigait.com/wp-content/gallery/homepageclients/dynamic/New-logo-1-nggid03374-ngg0dyn-400x300x100-00f0w010c011r110f110r010t010.png" style="height:90px;width:90px;margin:0px 0px 0px 0px;">
+							</td>
+							</td>
+							<td><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5524878.jpg"  alt="Car logo"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;"></td>
+							<td><img src="https://image.freepik.com/icones-gratis/motocicleta-de-grande-porte-silhueta-negra_318-43485.jpg"  alt="Bike logo"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;"></td>
+							<td><img src="https://cdn.vectorstock.com/i/thumb-large/23/56/2382356.jpg/2382356.jpg"  alt="Mobile n Tabs"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;"></td>
+							<td><img src="https://image.freepik.com/free-icon/books-stack-for-education_318-59577.jpg"  alt="Books"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;"></td>
+							<td><img src="http://images.clipartpanda.com/household-clipart-sofa_lamp.jpg" alt="Furniture"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;"></td>
+							<td><img src="https://image.freepik.com/free-vector/vacuum-cleaner-device-with-wheels_72147495386.jpg" alt="Home Appliances"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;"></td>
+							<td><img src="https://image.freepik.com/free-icon/female-hand-bag-with-metal-handle-tips_318-43144.jpg" alt="Accessories"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;"></td>
+							<td><img src="https://http2.mlstatic.com/adesivo-vinil-decor-beija-flor-so-r-400-frete-cores-D_NQ_NP_18923-MLB20163175450_092014-O.jpg" alt="Other"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;"></td>
+							<td >
+								<a href="#" data-toggle="modal" data-target="#login"  class="btn btn-info btn-lg">
+									<span class="glyphicon glyphicon-user" ></span> Login 
+								</a>
+							</td>
+							<td >
+							<a href="#" data-toggle="modal" data-target="#register"  class="btn btn-info btn-lg">
+								<span class="glyphicon glyphicon-user" ></span> Register 
+							</a>
+							</td>
+						</tr>
+					</table>
