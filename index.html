@@ -8,32 +8,303 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="style.css">
+		<script>
+		#car_ads{padding-top:50px;height:500px;}
+		#bike_ads{padding-top:50px;height:500px;}
+		#mobile_ads{padding-top:50px;height:500px;}
+		</script>
 	<link rel="import" href="header.html">
 	</head>
 	
-	<body >
-	      <div class="navbar-header" style="width:100%;">
-						<big><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></big>
+	<body data-spy="scroll"data-target=".navbar" data-offset="100">
+	      <nav class="nav navbar-inverse navbar-fixed-top" style="width:100%;background-color:black;">
+						<big><span style="padding:10px 10px 10px 10px;color:white;font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span></big>
 								<img src="https://www.aurigait.com/wp-content/gallery/homepageclients/dynamic/New-logo-1-nggid03374-ngg0dyn-400x300x100-00f0w010c011r110f110r010t010.png" style="height:100px;width:100px;margin-left:50px;">
 								
-							<img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5524878.jpg"  alt="Car logo"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;margin-left:100px;"></td>
-							<img src="https://image.freepik.com/icones-gratis/motocicleta-de-grande-porte-silhueta-negra_318-43485.jpg"  alt="Bike logo"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
-							<img src="https://cdn.vectorstock.com/i/thumb-large/23/56/2382356.jpg/2382356.jpg"  alt="Mobile n Tabs"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
+							<a  href="#car_ads" ><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5524878.jpg"  alt="Car logo"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;margin-left:100px;"></a>
+							<a  href="#bike_ads"><img src="https://image.freepik.com/icones-gratis/motocicleta-de-grande-porte-silhueta-negra_318-43485.jpg"  alt="Bike logo"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;"></a>
+							<a  href="#mobile_ads"><img src="https://cdn.vectorstock.com/i/thumb-large/23/56/2382356.jpg/2382356.jpg"  alt="Mobile n Tabs"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;"></a>
 							<img src="https://image.freepik.com/free-icon/books-stack-for-education_318-59577.jpg"  alt="Books"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
 							<img src="http://images.clipartpanda.com/household-clipart-sofa_lamp.jpg" alt="Furniture"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
 							<img src="https://image.freepik.com/free-vector/vacuum-cleaner-device-with-wheels_72147495386.jpg" alt="Home Appliances"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
 							<img src="https://image.freepik.com/free-icon/female-hand-bag-with-metal-handle-tips_318-43144.jpg" alt="Accessories"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
-							<img src="https://http2.mlstatic.com/adesivo-vinil-decor-beija-flor-so-r-400-frete-cores-D_NQ_NP_18923-MLB20163175450_092014-O.jpg" alt="Other"  style="width:90px;height:90px;border-radius: 50px;margin-right:10px;">
 							
+							
+							
+							
+							
+							
+							<big>
 							<a href="#" data-toggle="modal" data-target="#login"  >
-									<span class="glyphicon glyphicon-user" ></span> Login 
+									<button class="btn btn-primary">
+									<span class="glyphicon glyphicon-user" ></span> Login </button>
 								</a>
 							<a href="#" data-toggle="modal" data-target="#register"  >
-								<span class="glyphicon glyphicon-user" ></span> Register 
+								<button class="btn btn-primary"><span class="glyphicon glyphicon-user" ></span> Register </button>
 							</a>
+							</big>
+			<div class="row" style="margin-top:30px;">
+				<div class="col-xs-6 col-md-2" style="margin-left:20%;" >
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Location" />
+						<div class="input-group-btn">
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4" >
+					<div class="input-group">
+						<div class="input-group-btn search-panel">
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+								<span id="search_concept">Category</span> <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+							  <li><a href="#contains">Cars</a></li>
+							  <li><a href="#its_equal">Bikes</a></li>
+							  <li><a href="#greather_than">Mobiles & Tablets</a></li>
+							  <li><a href="#less_than">Books</a></li>
+							  <li><a href="#contains">Furniture</a></li>
+							  <li><a href="#its_equal">Home appliances</a></li>
+							  <li><a href="#greather_than">Accessories</a></li>
+							  <li class="divider"></li>
+							  <li><a href="#all">Anything</a></li>
+							</ul>
+						</div>
+						<input type="hidden" name="search_param" value="all" id="search_param">         
+						<input type="text" class="form-control" name="x" placeholder="Search for product">
+						<span class="input-group-btn">
+							<button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+						</span>
+					</div>				
+				</div>
+				<button class="btn btn-primary" data-toggle="modal" data-target="#post_ad">
+								Post Ad
+								</button>
+			</div>
+			
+          </nav><!--navbar ends here-->
+        <div class="timeline">
+				<!--newly posted-->
+				<div class="container-fluid  panel panel-primary" id="new_ads" style="margin-top:15%;width:80%;float:right;height:45%">
+					<div class="panel-heading">
+					<h2 class="panel-title">Newly Posted Ads
+					<a href="#" class="btn  btn-primary" style="float:right;">
+					  <span class="glyphicon glyphicon-th-large"></span> View All
+					</a></h2>
+					</div>
+					<div class="row panel-body">
 						
-                    </div>
-		
+							<div class="hovereffect col-sm-4">
+								<img class="img-responsive" src="http://placehold.it/350x200" alt="">
+								<div class="overlay">
+								   <h2>Image heading</h2>
+								   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+								   <a href="#">read more</a></p>
+								</div>
+						
+							</div>
+							<div class="hovereffect col-sm-4">
+								<img class="img-responsive" src="http://placehold.it/350x200" alt="">
+								<div class="overlay">
+								   <h2>Image heading</h2>
+								   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+								   <a href="#">read more</a></p>
+								</div>
+						
+							</div>
+							<div class="hovereffect col-sm-4">
+								<img class="img-responsive" src="http://placehold.it/350x200" alt="">
+								<div class="overlay">
+								   <h2>Image heading</h2>
+								   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+								   <a href="#">read more</a></p>
+								</div>
+						
+							</div>
+					</div>
+				</div>	<!--end newly posted-->
+	
+				<!--cars-->
+				<div class="container-fluid  panel panel-primary" id="car_ads" style="margin-top:5%;width:80%;float:right;height:40%" id="cars">
+					<div class="panel-heading">
+					<h2 class="panel-title">Cars<a href="#" class="btn  btn-primary" style="float:right;">
+					  <span class="glyphicon glyphicon-th-large"></span> View All
+					</a></h2>
+					</div>
+					<div class="row panel-body">
+						
+							<div class="hovereffect col-sm-4">
+								<img class="img-responsive" src="http://placehold.it/350x200" alt="">
+								<div class="overlay">
+								   <h2>Image heading</h2>
+								   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+								   <a href="#">read more</a></p>
+								</div>
+						
+							</div>
+							<div class="hovereffect col-sm-4">
+								<img class="img-responsive" src="http://placehold.it/350x200" alt="">
+								<div class="overlay">
+								   <h2>Image heading</h2>
+								   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+								   <a href="#">read more</a></p>
+								</div>
+						
+							</div>
+							<div class="hovereffect col-sm-4">
+								<img class="img-responsive" src="http://placehold.it/350x200" alt="">
+								<div class="overlay">
+								   <h2>Image heading</h2>
+								   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+								   <a href="#">read more</a></p>
+								</div>
+						
+							</div>
+					</div>
+				</div>	<!--end of cars-->
+				<!--bikes-->
+				<div class="container-fluid  panel panel-primary" id="bike_ads"style="margin-top:5%;width:80%;float:right;height:30%" id="bikes">
+					<div class="panel-heading">
+					<h2 class="panel-title">Bikes<a href="#" class="btn  btn-primary" style="float:right;">
+					  <span class="glyphicon glyphicon-th-large"></span> View All
+					</a></h2>
+					</div>
+					<div class="row panel-body">
+						
+							<div class="hovereffect col-sm-4">
+								<img class="img-responsive" src="http://placehold.it/350x200" alt="">
+								<div class="overlay">
+								   <h2>Image heading</h2>
+								   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+								   <a href="#">read more</a></p>
+								</div>
+						
+							</div>
+							<div class="hovereffect col-sm-4">
+								<img class="img-responsive" src="http://placehold.it/350x200" alt="">
+								<div class="overlay">
+								   <h2>Image heading</h2>
+								   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+								   <a href="#">read more</a></p>
+								</div>
+						
+							</div>
+							<div class="hovereffect col-sm-4">
+								<img class="img-responsive" src="http://placehold.it/350x200" alt="">
+								<div class="overlay">
+								   <h2>Image heading</h2>
+								   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+								   <a href="#">read more</a></p>
+								</div>
+						
+							</div>
+					</div>
+				</div>	<!--end of bikes-->
+				<!--Mobiles-->
+				<article class="container-fluid  panel panel-primary" id="mobile_ads" style="margin-top:5%;width:80%;float:right;height:30%">
+					<div class="panel-heading">
+					<h2 class="panel-title">Mobiles & tablets<a href="#" class="btn  btn-primary" style="float:right;">
+					  <span class="glyphicon glyphicon-th-large"></span> View All
+					</a></h2>
+					</div>
+					<div class="row panel-body">
+						
+							<div class="hovereffect col-sm-4">
+								<img class="img-responsive" src="http://placehold.it/350x200" alt="">
+								<div class="overlay">
+								   <h2>Image heading</h2>
+								   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+								   <a href="#">read more</a></p>
+								</div>
+						
+							</div>
+							<div class="hovereffect col-sm-4">
+								<img class="img-responsive" src="http://placehold.it/350x200" alt="">
+								<div class="overlay">
+								   <h2>Image heading</h2>
+								   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+								   <a href="#">read more</a></p>
+								</div>
+						
+							</div>
+							<div class="hovereffect col-sm-4">
+								<img class="img-responsive" src="http://placehold.it/350x200" alt="">
+								<div class="overlay">
+								   <h2>Image heading</h2>
+								   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+								   <a href="#">read more</a></p>
+								</div>
+						
+							</div>
+					</div>
+				</article>	<!--end of mobiles-->
+					
+    </div>                
+					
+			<div id="accordion" class="panel panel-primary behclick-panel col-xs-6 col-sm-2">
+				<div class="panel-heading">
+					<h3 class="panel-title">Search Filter </h3>
+				</div>
+				<div class="panel-body" >
+					<div class="panel-heading " >
+						<h4 class="panel-title">
+							<a data-toggle="collapse" href="#collapse0">
+								<i class="indicator fa fa-caret-down" aria-hidden="true"></i> Posted By
+							</a>
+						</h4>
+					</div>
+					
+					<div class="panel-heading " >
+						<h4 class="panel-title">
+							<a data-toggle="collapse" href="#collapse1">
+								<i class="indicator fa fa-caret-down" aria-hidden="true"></i>Date Conditions
+							</a>
+						</h4>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse in" >
+						<ul class="list-group">
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										Bofore Date
+									</label>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox" >
+									<label>
+										<input type="checkbox" value="">
+										After Date
+									</label>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox"  >
+									<label>
+										<input type="checkbox" value="">
+										On date
+									</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+			</div>
+		<div class="container">
+  <div class="row">
+  <hr>
+    <div class="col-lg-12">
+      <div class="col-md-8">
+        <a href="#">Terms of Service</a> | <a href="#">Privacy</a>    
+      </div>
+      <div class="col-md-4">
+        <p class="muted pull-right">© 2013 Company Name. All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 			<!-- Login modal-->
 		<div class="modal fade" id="login" role="dialog" style="background-image:url('http://www.whizjuniors.com/Content/img/banner.jpg');">
@@ -52,16 +323,15 @@
 							<input type="text" class="form-control" style="width:200px;" id="username" placeholder="Enter username">
 								<br>
 							<input type="password" class="form-control" style="width:200px;" id="pwd" placeholder="Enter password"><br>					
-						<button type="submit" class="btn btn-success btn-lg">Login</button><a href="#">Forgot Password?</a><br>
+						<button type="submit" class="btn btn-primary">Login</button><a href="#">Forgot Password?</a><br>
 						</div>
 					</div>
 					<div class="col-sm-6 modal-heaader" style="border-left:thin solid black;">
 						<h4><b>Sign in with :</b></h4>
-						<button type="button" class="form-control btn-social btn-facebook" style="width:180px;height:30px;"> Facebook</button>
+						<button type="button" class="loginBtn loginBtn--facebook" style="width:180px;height:30px;"> Facebook</button>
 						<br>
-						<button type="button" class="form-control btn-social btn-google"  style="width:180px;height:30px;"> Google +</button>
-						<br>
-						<button type="button" class="form-control btn-social btn-yahoo"  style="width:180px;height:30px;"> Yahoooo!</button>
+						<button type="button" class="loginBtn loginBtn--google"  style="width:180px;height:30px;"> Google +</button>
+						
 											</div>
 				</div>
 				</div>
@@ -113,6 +383,64 @@
 			</div>
 		</div>
 	       <!-- end of registration modal-->  
+		   
+		      <!-- Post Ad modal-->
+		<div class="modal fade" id="post_ad" role="dialog" style="background-image:url('http://www.whizjuniors.com/Content/img/banner.jpg');">
+			<div class="modal-dialog">
+			<div class="modal-content">	
+				<div class="modal-header" style="background-color:black;color:white;">
+					 <h1 >Sell it!
+					<button type="button" class="close" data-dismiss="modal"><big><span class="glyphicon glyphicon-remove-sign" style="color:white;"></big></span></button>
+					 	
+					 </h1>
+				</div>
+			<div class="modal-body">	
+			
+				<div >
+					<form>
+					<div class="form-group">
+							<div class="dropdown">
+							  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width:200px;">Select category
+							  <span class="caret"></span></button>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Cars</a></li>
+								<li><a href="#">Bikes</a></li>
+								<li><a href="#">Mobiles</a></li>
+								<li><a href="#">Books</a></li>
+								<li><a href="#">Furniture</a></li>
+								<li><a href="#">Home aplliances</a></li>
+								<li><a href="#">Accessories</a></li>
+								<li><a href="#">Others</a></li>
+							  </ul>
+							</div>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control"  id="username" placeholder="Product title">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="username" placeholder="enter name of the product">
+					</div>
+					
+					<div class="form-group">
+						<input type="text" class="form-control" id="username" placeholder="description" style="height:150px;">
+					</div>
+					<div class="form-group">
+						<input type="file" class="form-control" id="username" placeholder="upload photos">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="username" placeholder="Enter contact number">
+					</div>
+					
+					<div class="form-group">
+						<center><input type="submit" class="btn btn-success btn-lg" formaction="index.html"></button></center>
+					</div>
+				</form>
+				</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	       <!-- end of post ad modal-->  
 
 		<div id="mySidenav" class=" sidenav" > <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		
@@ -133,6 +461,17 @@
 			function closeNav() {
 				document.getElementById("mySidenav").style.width = "0";
 			}
+			    	
+
+        function toggleChevron(e) {
+		$(e.target)
+				.prev('.panel-heading')
+				.find("i.indicator")
+				.toggleClass('fa-caret-down fa-caret-right');
+	}
+	$('#accordion').on('hidden.bs.collapse', toggleChevron);
+	$('#accordion').on('shown.bs.collapse', toggleChevron);
+
 		</script>
 
 		   
